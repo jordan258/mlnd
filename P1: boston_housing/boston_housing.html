@@ -13832,7 +13832,7 @@ Dza40Jpc5qDnAAAAAElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 Graph 1 with a max depth of 1. 
-Both the training and testing score seem to be approaching a R2 value of around 0.45. Both curves reach this value early on and don't improve much as the number of training examples increase. What we have is an issue of high bias. Our model is a very simple one and performs equally bad on both the training and testing sets. What we have is an issue of high bias. With issues of high bias, more training data by itself is not very helpful because our simple model struggles to learn the underlying relationship.</p>
+Initially we see that with small amounts of data our model can perform extremely well on the training data set but extremely poorly on the test set. This is because it is very easy to fit to a small amount of data however our model is unlikely to learn the underlying relationship from only a few datapoints. As we increase our data size initially, we see a convergence between training and testing curves as our model learns to generalize to more data. Eventually the curves converge to an R2 value of around 0.45. Both curves reach this value early on and don't improve much as the number of training examples increase. What we have is an issue of high bias. Our model is a very simple one and performs equally bad on both the training and testing sets. What we have is an issue of high bias. With issues of high bias, more training data by itself is not very helpful because our simple model struggles to learn the underlying relationship.</p>
 
 </div>
 </div>
